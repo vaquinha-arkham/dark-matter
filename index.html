@@ -393,6 +393,39 @@
   .faq .answer p:last-child { margin: 0; }
   .faq .answer a { color: var(--accent); text-underline-offset: 3px; }
 
+  /* Ainda com dúvida */
+  .help {
+    margin-top: clamp(2rem, 4vw, 3rem);
+    max-width: 48rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem 2rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 14px;
+    padding: clamp(1.4rem, 3vw, 1.9rem) clamp(1.4rem, 3vw, 2rem);
+  }
+  .help h3 {
+    margin: 0 0 .3rem;
+    font-family: var(--title);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .help > div { flex: 1 1 18rem; }
+  .help p { margin: 0; color: var(--muted); }
+  .help .phone { color: var(--ink); font-weight: 600; white-space: nowrap; }
+  .btn.btn-whats {
+    background: var(--accent);
+    color: var(--accent-ink);
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+  .btn.btn-whats:hover { box-shadow: 0 10px 24px -10px var(--accent); }
+
   /* ---------- Rodapé ---------- */
   .closing {
     background:
@@ -660,10 +693,6 @@
                 <span><span class="addon-name">Pack Rick and Morty</span><span class="addon-desc">Pack de personagens temáticos, novidade deste projeto.</span></span>
                 <span class="addon-price">R$&nbsp;40</span>
               </li>
-              <li>
-                <span><span class="addon-name">Pack Scooby Doo</span><span class="addon-desc">O pack de personagens feito no projeto de Innsmouth.</span></span>
-                <span class="addon-price">R$&nbsp;40</span>
-              </li>
             </ul>
             <h4 class="addons-title">Do projeto anterior</h4>
             <ul class="addons">
@@ -674,6 +703,10 @@
               <li>
                 <span><span class="addon-name">Fundações Ciclópicas</span><span class="addon-desc">392 cartas e manual de 36 páginas.</span></span>
                 <span class="addon-price">R$&nbsp;519<small>ou R$&nbsp;679 com caixa</small></span>
+              </li>
+              <li>
+                <span><span class="addon-name">Pack Scooby Doo</span><span class="addon-desc">Pack de personagens temáticos.</span></span>
+                <span class="addon-price">R$&nbsp;40</span>
               </li>
             </ul>
           </div>
@@ -771,6 +804,14 @@
           </div>
         </details>
       </div>
+
+      <aside class="help" aria-labelledby="help-title">
+        <div>
+          <h3 id="help-title">Ainda com dúvida?</h3>
+          <p>Fale direto com o Sr Toon pelo WhatsApp: <span class="phone">+55 15 99142-0268</span></p>
+        </div>
+        <a class="btn btn-whats" href="https://wa.me/5515991420268?text=Ol%C3%A1%2C%20Sr%20Toon%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20Dark%20Matter." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </aside>
     </div>
   </section>
 </main>
